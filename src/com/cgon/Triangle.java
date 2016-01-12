@@ -39,14 +39,28 @@ public class Triangle {
     void setCoteC(double coteC) {
           this.coteC = coteC;
     }
+    
+	public void isIsocele(Triangle triangle){
+		if(coteA == coteB || coteA == coteC || coteB== coteC) {
+			System.out.println("Ce triangle est isocèle");
+		}else{
+			System.out.println("Ce triangle n'est pas isocèle");
+		}
+	}
+	
+	public void isEquilateral(Triangle triangle){
+		if(coteA == coteB && coteA == coteC & coteB==coteC){
+			System.out.println("Ce triangle est équilatéral");
+		}else{
+			System.out.println("Ce triangle n'est pas equilatéral");
+		}
+	}
+	
+	public String toString(){
+		return "Triangle [ côté a : " + this.getCoteA() + ", côté b : " + this.getCoteB() + ", côté c : " + this.getCoteC() + " ] ";
+	}
 
-    public void isEquilateral(Triangle triangle){
-        if(coteA == coteB && coteA == coteC & coteB==coteC){
-               System.out.println(" khalil vous dit que ce triangle est équilatéral");
-        }else{
-               System.out.println(" khalil vous dit que ce triangle n'est pas equilatéral");
-        }
-  }
+ 
 
 
 }
