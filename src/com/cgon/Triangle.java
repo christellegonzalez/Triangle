@@ -40,5 +40,13 @@ public class Triangle {
           this.coteC = coteC;
     }
 
+    public void isEquilateral(Triangle triangle){
+        if(coteA == coteB && coteA == coteC & coteB==coteC){
+               System.out.println(" khalil vous dit que ce triangle est équilatéral");
+        }else{
+               System.out.println(" khalil vous dit que ce triangle n'est pas equilatéral");
+        }
+  }
+
 
 }
